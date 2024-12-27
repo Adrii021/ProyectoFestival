@@ -1,0 +1,22 @@
+﻿<Window x:Class="ProyectoFestival.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Inicio de Sesión" Height="300" Width="400" Background="#282828" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- Botón de Volver -->
+        <Button Content="←" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"
+                Background="#444" Foreground="White" FontSize="20" FontWeight="Bold" Click="Volver_Click"/>
+
+        <TextBlock Text="Usuario:" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="txtUsuario" HorizontalAlignment="Right" Margin="0,50,50,0" Width="200" VerticalAlignment="Top" 
+                 Background="#444" Foreground="White" BorderBrush="Gray" BorderThickness="2" KeyDown="TxtUsuario_KeyDown"/>
+
+        <TextBlock Text="Contraseña:" HorizontalAlignment="Left" Margin="50,100,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <PasswordBox x:Name="txtContrasena" HorizontalAlignment="Right" Margin="0,100,50,0" Width="200" VerticalAlignment="Top" 
+                     Background="#444" Foreground="White" BorderBrush="Gray" BorderThickness="2"
+                     KeyDown="TxtContrasena_KeyDown"/>
+
+        <Button Content="Acceder" HorizontalAlignment="Center" Margin="0,150,0,0" Width="150" VerticalAlignment="Top" 
+                Click="Acceder_Click" Background="#4CAF50" Foreground="White" FontSize="16" FontWeight="Bold"/>
+    </Grid>
+</Window>
